@@ -1,0 +1,22 @@
+@@ -0,0 +1,21 @@
+def calcular_descuento(monto_total, porcentaje_descuento=10):
+    """
+    Calcula el monto del descuento.
+
+    :param monto_total: Monto total de la compra.
+    :param porcentaje_descuento: Porcentaje de descuento (default es 10%).
+    :return: Monto del descuento calculado.
+    """
+    descuento = monto_total * (porcentaje_descuento / 100)
+    return descuento
+if __name__ == "__main__":
+    # Primera llamada con monto total
+    monto1 = 200
+    descuento1 = calcular_descuento(monto1)
+    print(f"El descuento sobre {monto1} es: {descuento1}")
+
+    # Segunda llamada con monto total y porcentaje de descuento
+    monto2 = 150
+    porcentaje2 = 20
+    descuento2 = calcular_descuento(monto2, porcentaje2)
+    print(f"El descuento sobre {monto2} con un porcentaje de {porcentaje2}% es: {descuento2}")
