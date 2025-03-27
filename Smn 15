@@ -1,0 +1,30 @@
+# Crear un diccionario llamado informacion_personal
+informacion_personal = {
+    "nombre": "Juan Pérez",
+    "edad": 30,
+    "ciudad": "Quito",
+    "profesion": "Ingeniero"
+}
+
+# Acceder al valor asociado con la clave "ciudad"
+ciudad_actual = informacion_personal["ciudad"]
+print(f"Ciudad actual: {ciudad_actual}")
+
+# Modificar el valor de "ciudad"
+informacion_personal["ciudad"] = "Guayaquil"
+print(f"Nueva ciudad: {informacion_personal['ciudad']}")
+
+# Agregar una nueva clave-valor para "telefono"
+informacion_personal["telefono"] = "0991234567"
+
+# Verificar si la clave "telefono" existe en el diccionario
+if "telefono" not in informacion_personal:
+    informacion_personal["telefono"] = "0991234567"  # Este caso no se ejecutará, ya que ya se agregó.
+
+# Eliminar la clave "edad"
+if "edad" in informacion_personal:
+    del informacion_personal["edad"]
+
+# Imprimir el diccionario final
+print("Diccionario final:")
+print(informacion_personal)
